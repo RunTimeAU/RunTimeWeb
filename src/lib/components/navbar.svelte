@@ -1,5 +1,5 @@
 <script>
-
+    import { base } from "$app/paths";
 </script>
 
 <nav>
@@ -7,10 +7,10 @@
         <img id="navBarLogo" alt="logo" src="/logo/RT_uBaggrund.png" width="100" height="100">
     </div>
     <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="./About"><li>About</li></a>
-        <a href="./Contact"><li>Contact</li></a>
-        <a href="./Calendar"><li>Calendar</li></a>
+        <a href="{base}/"><li>Home</li></a>
+        <a href="{base}/About"><li>About</li></a>
+        <a href="{base}/Contact"><li>Contact</li></a>
+        <a href="{base}/Calendar"><li>Calendar</li></a>
     </ul>
 </nav>
 

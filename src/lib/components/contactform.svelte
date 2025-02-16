@@ -49,14 +49,18 @@
         position: relative;
         border: 1px solid var(--primary-color);
         border-radius: 5px;
+        color:white;
         width: 100%;
     }
     form input {
         width: 100%;
         border: none;
         background: transparent;
-        color: white;
         padding: 14px;
+    }
+
+    form input::placeholder {
+        color: white;
     }
 
     form input:focus {
