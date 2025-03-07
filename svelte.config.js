@@ -12,12 +12,16 @@ const config = {
 			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
+			out: 'build',
 			fallback: undefined,
 			precompress: false,
 			strict: true
 		}),
+		alias: {
+			$lib: 'src/lib',
+		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/RunTime' : '',
+			base: '',
 		}
 	}
 };
