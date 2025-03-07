@@ -1,18 +1,27 @@
 <script>
     import Navbar from "$lib/components/navbar.svelte";
     import Footer from "$lib/components/footer.svelte"; 
+    import { title } from "../stores/store";
 
-    let { children } = $props();
+    let currentTitle = "RunTime";
+    const unsubsribe = title.subscribe(value => {
+        currentTitle = value;
+    })
+
+    import { onDestroy } from "svelte";
+    onDestroy(() => {
+        unsubsribe();
+    });
 </script>
 <svelte:head>
-    <title>RunTime</title>
+    <title>{currentTitle}</title>
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
 </svelte:head>
 <div class="navbar">
     <Navbar></Navbar>
 </div>
 <div class="main">
-    {@render children()}
+    <slot></slot>
 </div>
 <div class="footer">
     <Footer></Footer>

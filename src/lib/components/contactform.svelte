@@ -1,11 +1,21 @@
 <script lang="ts">
+    import { title } from '../../stores/store.js';
+
     let email = "";
     let subject = "";
     let msg = "";
 
     function handleSubmit(event: Event) {
+        specialEffect(email, subject, msg);
         event.preventDefault();
         console.log("Form submitted");
+    }
+
+    function specialEffect(email: String, subject: String, msg: String) {
+        if (email == 'HamFraGames@gamesweb.dk' && subject == 'Hej' && msg == 'Det er Jeppe') {
+            console.log('Special effect activated');
+            title.set("RunTime X Jeppe Fra Games");
+        }
     }
 </script>
 
@@ -56,6 +66,7 @@
         width: 100%;
         border: none;
         background: transparent;
+        color: white;
         padding: 14px;
     }
 
