@@ -4,7 +4,7 @@
 
 <nav>
     <div class="logo">
-        <img id="navBarLogo" alt="logo" src="/logo/RT_uBaggrund.png" width="100" height="100">
+        <img id="navBarLogo" alt="logo" src="{base}/logo/RT_uBaggrund.png" width="100" height="100">
     </div>
     <ul>
         <a href="{base}/"><li>Home</li></a>

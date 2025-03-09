@@ -19,10 +19,10 @@ npx sv create my-app
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm run dev
+NODE_ENV=development npm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+NODE_ENV=development npm run dev -- --open
 ```
 
 ## Building
@@ -30,9 +30,45 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+NODE_ENV=development npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `NODE_ENV=development npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+# Publish SvelteKit project on GitHub Pages
+
+## Install @sveltejs/adapter-static and gh-pages. 
+
+```sh
+npm i -D @sveltejs/adapter-static gh-pages
+```
+
+## Update svelte.config.js by changing adapter-auto to adaptor-static.
+
+```js
+import adapter from '@sveltejs/adapter-static';
+```
+
+## +layout.js
+
+Add the following to `src/routes/+layout.js`
+
+```js
+export const prerender = true;
+```
+
+## Add a script to package.json. 
+
+```json
+"gh-pages": "npm run build && npx gh-pages -d build"
+```
+
+## Deploy
+
+Now you just need to run `npm run gh-pages`.
+
+## .nojekyll file for Tailwind CSS/Postcss
+
+If you are using a postcss such as Tailwind css, you need to add **an empty `.nojekyll`** file to the `gh-pages` branch.

@@ -1,4 +1,5 @@
 <script>
+    import { base } from "$app/paths";
 </script>
 
 <div class="welcome-text">
@@ -6,7 +7,7 @@
     <img
         id="bannerLogo"
         alt="Runtime logo"
-        src="logo/Banner_uBaggrund.png"
+        src="{base}/logo/Banner_uBaggrund.png"
         style="width:300px;"
     />
     <p>Pushing limits — on the track and in the terminal.</p>
