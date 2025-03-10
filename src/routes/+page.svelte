@@ -56,6 +56,7 @@
 
     .content {
         display: grid;
+        margin: 0 0 0 20px;
     }
 
     .content .short-introduction {

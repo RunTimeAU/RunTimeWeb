@@ -14,6 +14,7 @@
         unsubsribe();
     });
 </script>
+
 <svelte:head>
 	<link rel="icon" href="{base}/logo/RT_uBaggrund.png"/>
     <title>{currentTitle}</title>
@@ -39,11 +40,20 @@
         background: var(--background-color);
 
     }
-    :global(h1, h2, h3, h4, h5, p) {
-        color: var(--secondary-color);
+    :global(h1, h2, h3, h4, h5) {
+        color: var(--primary-color);
     }
     :global(h1) {
         font-weight: 500;
+    }
+    :global(h2) {
+        font-weight: 400;
+    }
+    :global(h3) {
+        font-weight: 300;
+    }
+    :global(p) {
+        color: var(--secondary-color);
     }
 
     :global(body) {
