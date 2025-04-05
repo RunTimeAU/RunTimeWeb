@@ -2,7 +2,7 @@
     import { base } from "$app/paths";
 </script>
 
-<div class="welcome-text">
+<div class="title-text">
     <h1>Welcome to</h1>
     <img
         id="bannerLogo"
@@ -31,23 +31,23 @@
 
 <style>
     
-    .welcome-text {
+    .title-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .welcome-text h1 {
+    .title-text h1 {
         padding: 0;
         color: var(--primary-color);
         margin: 15px 0 0 0;
         font-size: 3.75em;
     }
-    .welcome-text img {
+    .title-text img {
         padding: 0;
         margin: -40px 0 0 0;
     }
-    .welcome-text p {
+    .title-text p {
         color: var(--secondary-color);
         font-style: italic;
         font-weight: 300;
