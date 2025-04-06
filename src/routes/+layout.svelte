@@ -34,9 +34,9 @@
 <style>
     :global(:root) {
         font-family: "Kodchasan", sans-serif;
-        --primary-color: #734000;
-        --secondary-color: #f5f5f5;
-        --background-color: #a7a59c;
+        --primary-color: #393e41;
+        --secondary-color: #734000; 
+        --background-color: #f6f7eb;
         background: var(--background-color);
 
     }
@@ -48,12 +48,14 @@
     }
     :global(h2) {
         font-weight: 400;
+
     }
     :global(h3) {
         font-weight: 300;
+
     }
     :global(p) {
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
 
     :global(body) {
