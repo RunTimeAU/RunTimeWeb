@@ -16,6 +16,9 @@ import { base } from "$app/paths";
       <span class="material-symbols-outlined">diversity_3</span>
       <p>About us</p>
     </a>
+    <a href="https://www.strava.com/clubs/1287980">
+      <img src="/logo/strava-icon.svg" alt="strava">
+      <p>Strava</p>
   </div>
   <div class="right">
     <a href="{base}/"><img alt="Logo" src="{base}/logo/RunTime_uBaggrund.png" style="width:100px" /></a>
