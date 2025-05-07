@@ -9,9 +9,9 @@ let name = "";
 async function handleSubmit() {
   try {
     const res = await sendEmail(subject, name, email, msg);
-    alert("Email send Successfully.");
+    alert("Email send successfully.");
   } catch(err) {
-    alert("An error occured when trying to send email");
+    alert("An error occurred when trying to send the email.");
   }
 }
 </script>
