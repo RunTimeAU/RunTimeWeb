@@ -25,13 +25,6 @@
     </div>
     <div class="upcoming">
         <h3>Upcoming Events</h3>
-        <div class="AuRun">
-            <h4>AuRun 2025</h4>
-            <p>
-                We at RunTime are joining the 2025 AU Run, which will be held on May 31 at 12:30 pm in the University Park. 
-                More information about registration can be found by following ‘aurun_aarhusuniversity’ on Instagram.
-            </p>
-        </div>
     </div>
 </div>
 <style>
