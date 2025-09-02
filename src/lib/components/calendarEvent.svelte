@@ -21,6 +21,7 @@ export let location;
   align-items: center;
   border: 1px solid black;
   border-radius: 5px;
+  margin: 10px;
 }
 
 #title {
@@ -41,5 +42,6 @@ export let location;
 
 #desc {
   font-size: 1.1em;
+  text-align: center;
 }
 </style>
