@@ -27,7 +27,7 @@ export let location;
   padding: 0;
   font-size: 1.2em;
   font-weight: 500;
-  border-bottom: 1px solid black;
+  margin-bottom: 0;
 }
 
 #dateAndLocation {
@@ -37,5 +37,9 @@ export let location;
   font-size: 0.8em;
   color: var(--secondary-color);
   border-bottom: 1px solid black;
+}
+
+#desc {
+  font-size: 1.1em;
 }
 </style>
