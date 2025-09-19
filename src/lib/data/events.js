@@ -11,6 +11,12 @@
 //          ╰─────────────────────────────────────────────────────────╯
 //
 export const events = [
+  {
+    title: "RunTime x Fredagscaféen Sponsered Run",
+    date: "10. October",
+    location: "Intersection at Nygaard (Helsingsforsgade / Finlandsgade)",
+    description: "RunTime's first collaboration with Fredagscaféen! Join us for a relaxed 3km run, perfect for all levels. After the run, enjoy a free beer or soda sponsored by IDA. We'll meet at 16:00 at the intersection outside Nygaard. Come for the run, stay for the fun!"
+  }
 ]
 
 export const weekly = [
