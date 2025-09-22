@@ -12,8 +12,8 @@ let selected = 0;
     <p class="moreInfo"><a href="/Calendar">More info</a></p>
   </div>
   <div class="indexDots">
-    {#each events as event}
-      <div class="dot"></div>
+    {#each events as _, index}
+      <div class="dot {selected === index ? 'active' : '' }" on:click={() => selected = index}></div>
     {/each}
   </div>
 </div>
@@ -42,5 +42,9 @@ let selected = 0;
 .dot:hover {
   background: green;
   cursor: pointer;
+}
+
+.active {
+  background: green;
 }
 </style>
