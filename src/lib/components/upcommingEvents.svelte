@@ -7,7 +7,7 @@ let selected = 0;
   <h2>Upcoming Events</h2> 
   {#if events.length > 0}
     <div class="eventDetail">
-      <p class="evenTitle">{events[selected].title}</p>
+      <p class="eventTitle">{events[selected].title}</p>
       <p class="eventDate">{events[selected].date}</p>
       <p class="eventLocation">{events[selected].location}</p>
       <p class="moreInfo"><a href="/Calendar">More info</a></p>
