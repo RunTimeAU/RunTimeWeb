@@ -2,6 +2,7 @@
 // @ts-nocheck
 
 import { base } from "$app/paths";
+import UpcommingEvents from "$lib/components/upcommingEvents.svelte";
 </script>
 
 <div class="title-text">
@@ -27,6 +28,7 @@ import { base } from "$app/paths";
       reach out through the contact page or come and enjoy a nice run!
     </p>
     <p id="end-words">Hope to see you!</p>
+    <UpcommingEvents/>
   </div>
   <div class="strava-widget">
     <!-- svelte-ignore a11y_missing_attribute -->
