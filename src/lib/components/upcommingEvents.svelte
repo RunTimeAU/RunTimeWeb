@@ -1,6 +1,7 @@
 <script>
 import { events } from "$lib/data/events";
-import { base } from "$service-worker";
+import { base } from "$app/paths";
+
 let selected = 0;
 </script>
 
@@ -15,7 +16,7 @@ let selected = 0;
     </div>
     <div class="indexDots">
       {#each events as _, index}
-        <div class="dot {selected === index ? 'active' : '' }" type="button" on:click={() => selected = index}></div>
+        <div class="dot {selected === index ? 'active' : '' }" on:click={() => selected = index}></div>
       {/each}
     </div>
   {/if}
