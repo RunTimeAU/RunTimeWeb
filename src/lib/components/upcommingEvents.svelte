@@ -1,5 +1,6 @@
 <script>
 import { events } from "$lib/data/events";
+import { base } from "$service-worker";
 let selected = 0;
 </script>
 
@@ -10,11 +11,11 @@ let selected = 0;
       <p class="eventTitle">{events[selected].title}</p>
       <p class="eventDate">{events[selected].date}</p>
       <p class="eventLocation">{events[selected].location}</p>
-      <p class="moreInfo"><a href="/Calendar">More info</a></p>
+      <p class="moreInfo"><a href="{base}/Calendar">More info</a></p>
     </div>
     <div class="indexDots">
       {#each events as _, index}
-        <div class="dot {selected === index ? 'active' : '' }" on:click={() => selected = index}></div>
+        <div class="dot {selected === index ? 'active' : '' }" type="button" on:click={() => selected = index}></div>
       {/each}
     </div>
   {/if}
