@@ -16,10 +16,14 @@ import { base } from "$app/paths";
       <span class="material-symbols-outlined">diversity_3</span>
       <p>About us</p>
     </a>
-    <a href="https://www.strava.com/clubs/1287980">
-      <img src="{base}/logo/strava-icon.svg" alt="strava">
-      <p>Strava</p>
+    <div class="socials">
+      <a href="https://www.strava.com/clubs/1287980">
+        <img id="stravalogo" src="{base}/logo/strava-icon.svg" alt="strava">
       </a>
+      <a href="https://www.facebook.com/profile.php?id=61582564672233&locale=da_DK">
+        <img id="facelogo" src="{base}/logo/Facebook_Logo_Secondary.png" alt="facebook">
+      </a>
+    </div>
   </div>
   <div class="right">
     <a href="{base}/"><img alt="Logo" src="{base}/logo/RunTime_uBaggrund.png" style="width:100px" /></a>
@@ -64,5 +68,23 @@ import { base } from "$app/paths";
   width: 140px;
   height: auto;
   padding: 0 30px 0 0;
+}
+
+.socials {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+ justify-content: space-evenly; 
+}
+
+#stravalogo {
+  width: 20px;
+  height: 20px;
+}
+
+#facelogo {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%);
 }
 </style>
