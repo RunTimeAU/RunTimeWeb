@@ -11,12 +11,12 @@
 //          ╰─────────────────────────────────────────────────────────╯
 //
 export const events = [
-  {
-    title: "RunTime x Fredagscaféen Sponsered Run",
-    date: "10. October",
-    location: "Intersection at Nygaard (Helsingsforsgade / Finlandsgade)",
-    description: "RunTime's first collaboration with Fredagscaféen! Join us for a relaxed 3km run, perfect for all levels. After the run, enjoy a free beer or soda sponsored by IDA. We'll meet at 16:00 at the intersection outside Nygaard. Come for the run, stay for the fun!"
-  },
+  //{
+    //title: "RunTime x Fredagscaféen Sponsered Run",
+    //date: "10. October",
+    //location: "Intersection at Nygaard (Helsingsforsgade / Finlandsgade)",
+    //description: "RunTime's first collaboration with Fredagscaféen! Join us for a relaxed 3km run, perfect for all levels. After the run, enjoy a free beer or soda sponsored by IDA. We'll meet at 16:00 at the intersection outside Nygaard. Come for the run, stay for the fun!"
+  //},
   {
     title: "Au Run 2026",
     date: "TBD",
@@ -26,12 +26,12 @@ export const events = [
 ]
 
 export const weekly = [
-  {
-    title: "Weekly",
-    date: "Monday",
-    location: "Nygaard",
-    description: "We meet at 17:15pm in the intersection outside of Nygaard. The monday run is going to be switching between different kinds of run from normal run, intervals and things we think would be fun - to check what type of run it is look at the event in strava."
-  },
+  //{
+    //title: "Weekly",
+    //date: "Monday",
+    //location: "Nygaard",
+    //description: "We meet at 17:15pm in the intersection outside of Nygaard. The monday run is going to be switching between different kinds of run from normal run, intervals and things we think would be fun - to check what type of run it is look at the event in strava."
+  //},
   {
     title: "Weekly",
     date: "Thursday",
