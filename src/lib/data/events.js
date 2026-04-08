@@ -19,7 +19,7 @@ export const events = [
   //},
   {
     title: "Au Run 2026",
-    date: "TBD",
+    date: "16. May 2026",
     location: "Uni-park",
     description: "AURun is a yearly event hosted by 'Studenterådet'. We will from RunTime participate with as many as people as possible."
   },
