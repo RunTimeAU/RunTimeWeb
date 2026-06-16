@@ -23,7 +23,15 @@
         padding: 0 0 24px 0;
     }
     .history {
-        padding: 0 100px;
+        padding: 0 20px;
         text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
     }
+    @media (min-width: 769px) {
+        .history {
+            padding: 0 100px;
+        }
+    }
+
 </style>

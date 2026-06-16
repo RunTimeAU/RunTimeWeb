@@ -11,8 +11,8 @@ import UpcommingEvents from "$lib/components/upcommingEvents.svelte";
     id="bannerLogo"
     alt="Runtime logo"
     src="{base}/logo/Banner_uBaggrund.png"
-    style="width:300px;"
   />
+
   <p>Pushing limits — on the track and in the terminal.</p>
 </div>
 
@@ -43,41 +43,76 @@ import UpcommingEvents from "$lib/components/upcommingEvents.svelte";
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0 20px;
 }
 .title-text h1 {
   padding: 0;
   color: var(--primary-color);
   margin: 15px 0 0 0;
-  font-size: 3.75em;
+  font-size: 3rem;
 }
 .title-text img {
   padding: 0;
-  margin: -40px 0 0 0;
+  margin: -20px 0 0 0;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
 }
+
 .title-text p {
   color: var(--secondary-color);
   font-style: italic;
   font-weight: 300;
-  margin: -40px 0 50px 0;
+  margin: 10px 0 40px 0;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .content .strava-widget {
+  width: 100%;
+  max-width: 400px;
   text-align: center;
 }
 
 .content .strava-widget iframe {
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .content .short-introduction {
-  width: 50vw;
+  width: 100%;
+  max-width: 800px;
   text-align: center;
 }
+
+@media (min-width: 769px) {
+  .title-text h1 {
+    font-size: 3.75rem;
+  }
+  .title-text img {
+    margin: -40px 0 0 0;
+  }
+  .title-text p {
+    margin: -40px 0 50px 0;
+  }
+  .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px;
+  }
+  .content .short-introduction {
+    width: 50%;
+  }
+}
 </style>
+

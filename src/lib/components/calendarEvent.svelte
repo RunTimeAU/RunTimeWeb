@@ -15,14 +15,16 @@ export let location;
 .eventBox {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
   max-width: 500px;
-  padding: 0 20px 0 20px;
+  padding: 15px;
   align-items: center;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
+
 
 #title {
   padding: 0;

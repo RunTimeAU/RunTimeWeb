@@ -59,29 +59,17 @@
     }
 
     :global(body) {
-        display: grid;
-        grid-template-columns: 25%vw 25%vw 25%vw 25%vw;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: 
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
+        display: flex;
+        flex-direction: column;
         min-height: 100vh;
-
-
         margin: 0;
         padding: 0;
     }
 
-    .navbar {
-        grid-area: header;
-    }
     .main {
-        grid-area: main;
+        flex: 1;
     }
-    .footer {
-        grid-area: footer;
-    }
+
     
     * {
         font-display: swap;

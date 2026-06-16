@@ -30,9 +30,12 @@ let selected = 0;
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  padding: 10px 20px;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 
 .container h2 {

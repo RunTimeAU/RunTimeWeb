@@ -43,25 +43,37 @@ h1 {
 }
 .events {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
 }
 .weekly, .upcoming {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  width: 50%;
+  width: 100%;
 }
 
-.weekly {
-  margin: 0 0 0 20px;
-  padding: 0 20px 0 0;
+@media (min-width: 769px) {
+  .events {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .weekly, .upcoming {
+    width: 45%;
+  }
+  .weekly {
+    margin: 0;
+    padding: 0 20px 0 0;
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+  .upcoming {
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
 }
 
-
-.upcoming {
-  margin: 0 20px 0 0;
-  padding: 0 0 0 20px;
-}
 </style>

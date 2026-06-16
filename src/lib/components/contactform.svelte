@@ -53,9 +53,11 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 30vw;
+  width: 100%;
+  max-width: 500px;
   gap: 14px;
 }
+
 
 form label {
   position: relative;
