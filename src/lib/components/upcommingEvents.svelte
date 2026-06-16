@@ -19,6 +19,10 @@ let selected = 0;
         <div class="dot {selected === index ? 'active' : '' }" on:click={() => selected = index}></div>
       {/each}
     </div>
+    {:else}
+    <div class="eventDetail">
+      <p> There are currently no upcoming events </p> 
+  </div>
   {/if}
 </div>
 
