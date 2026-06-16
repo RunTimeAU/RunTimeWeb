@@ -9,7 +9,7 @@ import { base } from "$app/paths";
   <ul>
     <a href="{base}/"><li>Home</li></a>
     <a href="{base}/About"><li>About</li></a>
-    <a href="{base}/Contact"><li>Contact</li></a>
+    <!--    <a href="{base}/Contact"><li>Contact</li></a> -->
     <a href="{base}/Calendar"><li>Calendar</li></a>
   </ul>
 </nav>

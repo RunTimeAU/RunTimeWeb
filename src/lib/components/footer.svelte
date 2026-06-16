@@ -8,10 +8,10 @@ import { base } from "$app/paths";
     <p>©RunTime 2025</p>
   </div>
   <div class="middle">
-    <a href="{base}/Contact">
+<!--    <a href="{base}/Contact">
       <span class="material-symbols-outlined">alternate_email</span>
       <p>Contact us</p>
-    </a>
+    </a> -->
     <a href="{base}/About">
       <span class="material-symbols-outlined">diversity_3</span>
       <p>About us</p>
