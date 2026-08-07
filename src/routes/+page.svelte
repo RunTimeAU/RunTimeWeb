@@ -23,10 +23,9 @@ import UpcommingEvents from "$lib/components/upcommingEvents.svelte";
       RunTime is the running club made by CS students for CS students. The
       goal is to get students together through running and this way meet
       more people sharing the same studies. We wan't to create an
-      environment where everyone feels seen and enjoys being a part of. If
-      this sounds interesting but you have any questions, feel free to
-      reach out through the contact page or come and enjoy a nice run!
+      environment where everyone feels seen and enjoys being a part of. 
     </p>
+
     <p id="end-words">Hope to see you!</p>
     <UpcommingEvents/>
   </div>
