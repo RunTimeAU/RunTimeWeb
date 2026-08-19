@@ -24,7 +24,7 @@ import { weekly, events } from "$lib/data/events";
     <h2>Upcoming Events</h2>
     {#if events.length > 0}
       {#each events as event}
-          <CalendarEvent title={event.title} date={event.date} location={event.location} description={event.description}/>
+          <CalendarEvent title={event.title} date={event.date} location={event.location} description={event.description} link={event.link} linkText={event.linkTitle || event.linkText}/>
       {/each}
     {:else}
       <p>There are currently no events planned. Come back later. </p>

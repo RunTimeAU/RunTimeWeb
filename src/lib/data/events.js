@@ -7,21 +7,27 @@
 //          │                        date: "",                        │
 //          │                      location: "",                      │
 //          │                    description: "",                     │
+  //                                link: "",
+    //                              linkTitle: "",
 //          │                            }                            │
 //          ╰─────────────────────────────────────────────────────────╯
 //
 export const events = [
   {
-    tittle: "Social Run with IDA",
+    title: "Social Run with IDA",
     date: "7. September",
     location: "Katrinebjerg",
-    description: "IDA invites you to a Social Run, where we’ll start with a group run and finish with some refreshments. The event is a great opportunity for new students to meet others across different years and fields of study. If you’ve been a student for a while, you’re of course just as welcome. Whether you’re an experienced runner or completely new to running, everyone is welcome to join! Register: https://ida.dk/arrangementer-og-kurser/arrangementer/ida-social-run-katrinebjerg-368174"
+    description: "IDA invites you to a Social Run, where we’ll start with a group run and finish with some refreshments. The event is a great opportunity for new students to meet others across different years and fields of study. If you’ve been a student for a while, you’re of course just as welcome. Whether you’re an experienced runner or completely new to running, everyone is welcome to join!",
+    link: "https://ida.dk/arrangementer-og-kurser/arrangementer/ida-social-run-katrinebjerg-368174",
+    linkTitle: "Register here!",
   },
   {
-    tittle: "Social Run with IDA",
+    title: "Social Run with IDA",
     date: "21. September",
     location: "Navitas",
-    description: "IDA invites you to a Social Run, where we’ll start with a group run and finish with some refreshments. The event is a great opportunity for new students to meet others across different years and fields of study. If you’ve been a student for a while, you’re of course just as welcome. Whether you’re an experienced runner or completely new to running, everyone is welcome to join! Register: https://ida.dk/arrangementer-og-kurser/arrangementer/ida-social-run-navitas-368175"
+    description: "IDA invites you to a Social Run, where we’ll start with a group run and finish with some refreshments. The event is a great opportunity for new students to meet others across different years and fields of study. If you’ve been a student for a while, you’re of course just as welcome. Whether you’re an experienced runner or completely new to running, everyone is welcome to join!",
+    link: "https://ida.dk/arrangementer-og-kurser/arrangementer/ida-social-run-navitas-368175",
+    linkTitle: "Register here!",
   },
 ]
 
