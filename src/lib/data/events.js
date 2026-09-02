@@ -40,7 +40,7 @@ export const weekly = [
   //},
   {
     title: "Weekly",
-    date: "TBD",
+    date: "Wednesday",
     location: "Nygaard",
     description: "We meet at 16:15 in the intersection outside of Nygaard. The thursday run is a simple run, often around 4km if not anything else have been decided, this run is made so everyone can join - from beginner runner to the runner who just finnished a half-marathon."
   },
